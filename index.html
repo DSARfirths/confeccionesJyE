@@ -3,49 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J&E Bordados y Sublimados | Calidad y Color en Cada Prenda</title>
-    <meta name="description" content="Especialistas en bordados y sublimados de alta calidad. Damos vida a tus diseños con precisión y colores vibrantes.">
+    <title>J&E Bordados y Sublimados | Uniformes Escolares y para Empresas en Piura</title>
+    <meta name="description" content="Especialistas en bordados y sublimados de alta calidad. Confeccionamos uniformes para los principales colegios de Piura y para empresas.">
 
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Rye&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
     <script>
       tailwind.config = {
         theme: {
           extend: {
-            fontFamily: {
-              'rye': ['Rye', 'serif'],
-              'roboto-slab': ['Roboto Slab', 'serif'],
-            },
-            colors: {
-              'brand-red': '#E4032E',
-              'brand-yellow': '#FFD300',
-              'brand-green': '#00A651',
-              'brand-cyan': '#00AEEF',
-              'brand-blue': '#4A0082',
-              'brand-magenta': '#EC008C',
-            }
+            fontFamily: { 'rye': ['Rye', 'serif'], 'roboto-slab': ['Roboto Slab', 'serif'], },
+            colors: { 'brand-red': '#E4032E', 'brand-yellow': '#FFD300', 'brand-green': '#00A651', 'brand-cyan': '#00AEEF', 'brand-blue': '#4A0082', 'brand-magenta': '#EC008C', }
           }
         }
       }
     </script>
-    
     <style>
-        .rainbow-gradient {
-            background-image: linear-gradient(to right, #E4032E, #FFD300, #00A651, #00AEEF, #4A0082, #EC008C);
-        }
-        .text-shadow-custom {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .text-outline-custom {
-            -webkit-text-stroke: 1px #000;
-            text-stroke: 1px #000;
-        }
+        .rainbow-gradient { background-image: linear-gradient(to right, #E4032E, #FFD300, #00A651, #00AEEF, #4A0082, #EC008C); }
     </style>
 </head>
 
@@ -54,49 +32,69 @@
     <header id="main-header" class="bg-white shadow-sm sticky top-0 z-50"></header>
 
     <main>
-        <section class="text-center py-20 md:py-32">
-            <div class="container mx-auto px-6">
-                <h1 class="font-rye text-6xl md:text-8xl text-shadow-custom">J&E</h1>
-                <h2 class="font-roboto-slab uppercase tracking-widest font-bold text-xl md:text-3xl mt-2">Bordados y Sublimados</h2>
-                <p class="max-w-2xl mx-auto mt-6 text-lg text-gray-700">
-                    Transformamos tus ideas en prendas únicas. Desde la elegancia del hilo bordado hasta la explosión de color del sublimado, garantizamos un acabado perfecto.
-                </p>
-                <a href="contacto.html" class="inline-block mt-10 text-white font-bold py-4 px-10 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg rainbow-gradient">
-                    Cotiza tu Proyecto
+        <section class="relative h-[70vh] bg-cover bg-center text-white" style="background-image: url('assets/images/Hero-Principal.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative h-full flex flex-col items-center justify-center text-center p-6">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-shadow-lg">Calidad y Dedicación en Cada Uniforme</h1>
+                <p class="text-lg md:text-xl max-w-2xl mb-8 text-shadow-md">Confeccionamos los uniformes para los principales colegios de Piura y potenciamos la imagen de tu empresa.</p>
+                <a href="uniformes-escolares.html" class="rainbow-gradient text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-xl">
+                    Ver Uniformes Escolares
                 </a>
             </div>
         </section>
 
-        <div class="h-2 rainbow-gradient"></div>
-
-        <section id="servicios" class="py-16 md:py-24 bg-gray-50">
+        <section id="colegios" class="py-16 md:py-24 bg-gray-50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold">Nuestros Servicios</h2>
-                    <p class="text-gray-600 mt-2">Precisión y arte en cada técnica.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold">Confianza que se Viste</h2>
+                    <p class="text-gray-600 mt-2">Somos proveedores de confianza para los principales colegios de Piura.</p>
+                </div>
+                <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4">
+                    <span class="font-bold text-lg text-gray-700">San Miguel</span>
+                    <span class="font-bold text-lg text-gray-700">Belén</span>
+                    <span class="font-bold text-lg text-gray-700">Fátima</span>
+                    <span class="font-bold text-lg text-gray-700">El Triunfo</span>
+                    <span class="font-bold text-lg text-gray-700">Bacilio Ramírez Peña</span>
+                </div>
+                 <div class="text-center mt-12">
+                    <a href="uniformes-escolares.html" class="text-black font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105 border-2 border-black hover:bg-gray-100">
+                        Encuentra el uniforme de tu colegio
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="servicios" class="py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Nuestras Especialidades</h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                     <div class="text-center">
-                        <div class="text-6xl text-brand-blue mb-4">
-                            <i class="fas fa-hat-cowboy-side"></i> </div>
+                        <div class="text-6xl text-brand-blue mb-4"><i class="fas fa-hat-cowboy-side"></i></div>
                         <h3 class="text-2xl font-bold mb-2">Bordados de Alta Precisión</h3>
-                        <p class="text-gray-700">
-                            Ideal para logos, uniformes y diseños que requieren durabilidad y un acabado profesional con relieve. Utilizamos hilos de la mejor calidad.
-                        </p>
+                        <p class="text-gray-700">Perfectos para logos e insignias que requieren un acabado elegante y de máxima durabilidad.</p>
                     </div>
-
                     <div class="text-center">
-                        <div class="text-6xl text-brand-magenta mb-4">
-                            <i class="fas fa-palette"></i> </div>
+                        <div class="text-6xl text-brand-magenta mb-4"><i class="fas fa-palette"></i></div>
                         <h3 class="text-2xl font-bold mb-2">Sublimados a Full Color</h3>
-                        <p class="text-gray-700">
-                            La mejor opción para fotografías, diseños complejos y degradados. El color se integra permanentemente en la tela, resultando en imágenes vibrantes que no se sienten al tacto.
-                        </p>
+                        <p class="text-gray-700">Ideal para diseños complejos y fotografías, con colores vibrantes que se integran a la tela.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="bg-gray-900 text-white">
+            <div class="container mx-auto px-6 py-16 text-center">
+                <h2 class="text-3xl font-bold mb-4">¿Necesitas Uniformes para tu Empresa?</h2>
+                <p class="max-w-3xl mx-auto mb-8">
+                    Desde polos con tu logo hasta uniformes completos. Ayudamos a que tu equipo proyecte la mejor imagen corporativa.
+                </p>
+                <a href="uniformes-empresariales.html" class="inline-block bg-white text-black font-bold py-3 px-8 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                    Ver Opciones para Empresas
+                </a>
+            </div>
+        </section>
         <section id="galeria" class="py-16 md:py-24">
              <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -114,18 +112,6 @@
                         Ver más proyectos
                     </a>
                 </div>
-            </div>
-        </section>
-        
-        <section class="bg-gray-900 text-white">
-            <div class="container mx-auto px-6 py-16 text-center">
-                <h2 class="text-3xl font-bold mb-4">¿Tienes una idea en mente?</h2>
-                <p class="max-w-3xl mx-auto mb-8">
-                    Contáctanos. Estamos listos para asesorarte y convertir tu diseño en una realidad con la más alta calidad.
-                </p>
-                <a href="contacto.html" class="inline-block text-white font-bold py-4 px-10 rounded-lg text-lg transition duration-300 transform hover:scale-105 shadow-lg rainbow-gradient">
-                    Hablemos de tu Proyecto
-                </a>
             </div>
         </section>
 
